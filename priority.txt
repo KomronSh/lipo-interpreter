@@ -1,0 +1,4 @@
+a 0 NOT = 
+b 1 NOT = 
+c a b OR = 
+d c a XOR b AND = 

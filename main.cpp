@@ -2,7 +2,7 @@
 #include "interpreter.h"
 int main()
 {
-	if (!interpretMnimocode()) {
+	if (!interpret()) {
 		std::cout << "Ошибка при интерпретации мнимокода\n";
 		return 1;
 	}    

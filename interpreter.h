@@ -10,6 +10,7 @@
 
 bool interpretMnimocode() {
 	ifstream in("mnimocode.txt");
+	std::ofstream out("result.txt");
 	if (!in.is_open()) {
 		std::cout << "Не удалось открыть файл с мнимокодом\n";
 		return false;
@@ -64,10 +65,12 @@ bool interpretMnimocode() {
     }
 
     for (auto x : vars) {
-        std::cout << x.first << " = " << x.second << std::endl;
+        //std::cout << x.first << " = " << x.second << "\n";
+        out << x.first << " = " << x.second << "\n";
     }
 
     in.close();
+	out.close();
 	return true; 
 }
 
