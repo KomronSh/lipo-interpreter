@@ -1,0 +1,23 @@
+# Visual Studio / MSVC
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+x64/
+Debug/
+Release/
+interpreter/x64/
+
+# Build artifacts
+*.obj
+*.ilk
+*.pdb
+*.exe
+*.log
+
+# Generated interpreter files
+lexem.txt
+postfix_form.txt
+mnimocode.txt
+errors.log
