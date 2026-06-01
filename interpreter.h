@@ -44,7 +44,7 @@ bool interpretMnimocode() {
         else if (cmd == "OR") {
             int b{ st.top() }; st.pop();
             int a{ st.top() }; st.pop();
-            st.push(a || b);
+            st.push(a | b);
         }
         else if (cmd == "XOR") {
             int b{ st.top() }; st.pop();
@@ -53,13 +53,13 @@ bool interpretMnimocode() {
         }
         else if (cmd == "NOT") {
             int a{ st.top() }; st.pop();
-            st.push(!a);
+            st.push(~a);
         }
         else if (cmd == "AND") {
             if (st.size() < 2) {
                 int b{ st.top() }; st.pop();
                 int a{ st.top() }; st.pop();
-                st.push(a && b);
+                st.push(a & b);
             }
         }
     }
